@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="Modern Roomへのお問い合わせページです。なんでもお気軽にお問い合わせください。">
+    <meta name="robots" content="noindex, nofollow">
+    <title>お問い合わせ | Modern Room</title>
+
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css"
+        media="screen and (max-width:768px)">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Zen+Kaku+Gothic+New&display=swap"
+        rel="stylesheet">
+
+    <!-- ファビコン -->
+    <link rel="icon" href="../images/favicon.ico">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="../js/common.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <h1><a href="../index.html" class="font">Modern Room</a></h1>
+            <nav class="NavMenu">
+                <ul>
+                    <li><a href="../gallery/index.html">Gallery</a></li>
+                    <li><a href="../company/index.html">Company</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Online Shop<i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #fff;"></i></a></li>
+                </ul>
+            </nav>
+            <div class="Toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <ul class="pan">
+            <li><a href="../index.html">HOME</a></li>
+            <li>お問い合わせ</li>
+        </ul>
+
+        <!-- セクション -->
+        <section class="section form">
+            <h2>お問い合わせ</h2>
+            <p class="hissu">※必須</p>
+
+            <form action="test_mail.html" method="post">
+                <!-- お名前 -->
+                <div class="form-group">
+                    <label for="name" class="form-label">お名前<span>※</span></label>
+                    <div>
+                        <input type="text" name="name" id="name">
+                    </div>
+                </div>
+
+                <!-- フリガナ -->
+                <div class="form-group">
+                    <label for="firigana" class="form-label">フリガナ<span>※</span></label>
+                    <div>
+                        <input type="text" name="furigana" id="furigana">
+                    </div>
+                </div>
+
+                <!-- E-Mail -->
+                <div class="form-group">
+                    <label for="mail" class="form-label">E-mail<span>※</span></label>
+                    <div>
+                        <input type="email" name="mail" id="mail">
+                    </div>
+                </div>
+
+                <!-- 電話番号 -->
+                <div class="form-group">
+                    <label for="tel" class="form-label">電話番号</label>
+                    <div>
+                        <input type="tel" name="tel" id="tel">
+                    </div>
+                </div>
+
+                <!-- お問い合わせ種別 -->
+                <div class="form-group">
+                    <label for="messageType" class="form-label">お問い合わせ種別<span>※</span></label>
+                    <div>
+                        <select name="messageType" id="messageType">
+                            <option value="選択してください">選択してください</option>
+                            <option value="商品について">商品について</option>
+                            <option value="ご注文・配送について">ご注文・配送について</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- お問い合わせ内容 -->
+                <div class="form-group">
+                    <label for="yourInquiry" class="form-label">お問い合わせ内容<span>※</span></label>
+                    <div>
+                        <textarea name="content" id="yourInquiry" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <!-- 個人情報同意 -->
+                <div>
+                    <input type="checkbox" class="checkbox">
+                    <label for="checkbox">利用規約および個人情報の取り扱いについて同意する</label>
+                </div>
+
+                <!-- 送信ボタン -->
+                <div class="form-btn">
+                    <button type="submit" disabled>送信する</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <div class="footer-logo">
+            <h1><a href="#" class="font">Modern Room</a></h1>
+            <address>〒530-0001<br>大阪府大阪市北区梅田３丁目１−１</address>
+            <ul class="footer-sns">
+                <li><a href=""><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-line fa-2xl"></i></a></li>
+            </ul>
+            <div>
+                <a href="" class="more-btn">Online Shop<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <nav>
+            <ul class="footer-nav">
+                <li><a href="../">Home</a></li>
+                <li><a href="../gallery/">Gallery</a></li>
+                <li><a href="../company/">Company</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">Copyright &copy; @2015- xxx-xxxxx All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
