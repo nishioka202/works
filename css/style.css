@@ -362,7 +362,7 @@ li span {
 }
 
 .topics-item div {
-    background: #dbd7af;
+    background: #dfded1;
     border-radius: 5px;
     height: 400px;
     margin-bottom: 20px;
@@ -376,45 +376,6 @@ li span {
 .topics-item p {
     text-align: left;
     margin: 10px;
-}
-
-/* ブログ */
-
-ul.recent-entry-list {
-    padding: 10px 0 0;
-    margin: 10px 0 0;
-    list-style: none;
-    border-top: 1px solid;
-    width: 500px;
-    display: inline-block;
-    text-align: left;
-}
-
-ul.recent-entry-list li {
-    overflow: hidden;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid;
-}
-
-ul.recent-entry-list img {
-    width: 80px;
-    height: auto;
-    margin-left: 10px;
-    float: right;
-}
-
-span.recent-entry-date {
-    display: inline-block;
-    font-size: 12px;
-    background: #322311;
-    color: #fff;
-    padding: 2px 10px;
-    margin-bottom: 5px;
-}
-
-span.recent-entry-title {
-    display: block;
 }
 
 /* ------------ギャラリー-------------- */
@@ -749,4 +710,5 @@ button[type="submit"]:disabled {
         padding-top: 0;
         margin-bottom: 5px;
     }
+
 }
